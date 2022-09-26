@@ -3,8 +3,8 @@ import java.util.regex.*;
 public class RegexForPassWord {
 
      public static void main(String[] args) {
-        //password should contain atleast one upper-case, atleast one number and minimum 8 characters
-	Pattern pattern = Pattern.compile("^[A-Z]+[0-9]+\\w{6,}");
+        //password should contain atleast one upper-case and minimum 8 characters
+	Pattern pattern = Pattern.compile("^[A-Z]+\\w{7,}");
 	Scanner sc = new Scanner(System.in);
 	System.out.println("enter the password");
 	String input= sc.next();
